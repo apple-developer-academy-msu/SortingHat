@@ -11,6 +11,7 @@
 		A63E44162A7976D200233EB8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A63E44152A7976D200233EB8 /* ContentView.swift */; };
 		A63E44182A7976D300233EB8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A63E44172A7976D300233EB8 /* Assets.xcassets */; };
 		A63E441B2A7976D300233EB8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A63E441A2A7976D300233EB8 /* Preview Assets.xcassets */; };
+		A63E44222A797B8B00233EB8 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = A63E44212A797B8B00233EB8 /* Model.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,7 @@
 		A63E44152A7976D200233EB8 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		A63E44172A7976D300233EB8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A63E441A2A7976D300233EB8 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		A63E44212A797B8B00233EB8 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +55,7 @@
 			children = (
 				A63E44132A7976D200233EB8 /* SortingHatApp.swift */,
 				A63E44152A7976D200233EB8 /* ContentView.swift */,
+				A63E44212A797B8B00233EB8 /* Model.swift */,
 				A63E44172A7976D300233EB8 /* Assets.xcassets */,
 				A63E44192A7976D300233EB8 /* Preview Content */,
 			);
@@ -137,6 +140,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A63E44222A797B8B00233EB8 /* Model.swift in Sources */,
 				A63E44162A7976D200233EB8 /* ContentView.swift in Sources */,
 				A63E44142A7976D200233EB8 /* SortingHatApp.swift in Sources */,
 			);
