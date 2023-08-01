@@ -17,9 +17,9 @@ struct ContentView: View {
     @StateObject var randomizer: StudentRandomizer = StudentRandomizer(learners: Learner.testLearners)
     var body: some View {
         Button("Sort") {
+            randomizer.sortLearners()
             
-            
-            print("\(randomizer.sortLearners())")
+            print("\(randomizer.sortedTeams?.count)")
         }
     }
 }

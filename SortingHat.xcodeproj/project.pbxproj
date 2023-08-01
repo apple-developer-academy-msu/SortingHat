@@ -15,7 +15,19 @@
 		A63E44242A79828D00233EB8 /* StudentRandomizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A63E44232A79828D00233EB8 /* StudentRandomizer.swift */; };
 		A63E44262A7982AB00233EB8 /* Array+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A63E44252A7982AB00233EB8 /* Array+Extension.swift */; };
 		A63E442A2A7982CE00233EB8 /* Team.swift in Sources */ = {isa = PBXBuildFile; fileRef = A63E44292A7982CE00233EB8 /* Team.swift */; };
+		A63E44322A79882000233EB8 /* SortingHatTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A63E44312A79882000233EB8 /* SortingHatTests.swift */; };
+		A63E44392A79883700233EB8 /* StudentRandomizerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A63E44382A79883700233EB8 /* StudentRandomizerTests.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A63E44332A79882000233EB8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A63E44082A7976D200233EB8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A63E440F2A7976D200233EB8;
+			remoteInfo = SortingHat;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		A63E44102A7976D200233EB8 /* SortingHat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SortingHat.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -27,10 +39,20 @@
 		A63E44232A79828D00233EB8 /* StudentRandomizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentRandomizer.swift; sourceTree = "<group>"; };
 		A63E44252A7982AB00233EB8 /* Array+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+Extension.swift"; sourceTree = "<group>"; };
 		A63E44292A7982CE00233EB8 /* Team.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Team.swift; sourceTree = "<group>"; };
+		A63E442F2A79882000233EB8 /* SortingHatTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SortingHatTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A63E44312A79882000233EB8 /* SortingHatTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SortingHatTests.swift; sourceTree = "<group>"; };
+		A63E44382A79883700233EB8 /* StudentRandomizerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentRandomizerTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		A63E440D2A7976D200233EB8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A63E442C2A79882000233EB8 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -44,6 +66,7 @@
 			isa = PBXGroup;
 			children = (
 				A63E44122A7976D200233EB8 /* SortingHat */,
+				A63E44302A79882000233EB8 /* SortingHatTests */,
 				A63E44112A7976D200233EB8 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -52,6 +75,7 @@
 			isa = PBXGroup;
 			children = (
 				A63E44102A7976D200233EB8 /* SortingHat.app */,
+				A63E442F2A79882000233EB8 /* SortingHatTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -95,6 +119,15 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
+		A63E44302A79882000233EB8 /* SortingHatTests */ = {
+			isa = PBXGroup;
+			children = (
+				A63E44312A79882000233EB8 /* SortingHatTests.swift */,
+				A63E44382A79883700233EB8 /* StudentRandomizerTests.swift */,
+			);
+			path = SortingHatTests;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -115,6 +148,24 @@
 			productReference = A63E44102A7976D200233EB8 /* SortingHat.app */;
 			productType = "com.apple.product-type.application";
 		};
+		A63E442E2A79882000233EB8 /* SortingHatTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A63E44352A79882000233EB8 /* Build configuration list for PBXNativeTarget "SortingHatTests" */;
+			buildPhases = (
+				A63E442B2A79882000233EB8 /* Sources */,
+				A63E442C2A79882000233EB8 /* Frameworks */,
+				A63E442D2A79882000233EB8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A63E44342A79882000233EB8 /* PBXTargetDependency */,
+			);
+			name = SortingHatTests;
+			productName = SortingHatTests;
+			productReference = A63E442F2A79882000233EB8 /* SortingHatTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -127,6 +178,10 @@
 				TargetAttributes = {
 					A63E440F2A7976D200233EB8 = {
 						CreatedOnToolsVersion = 14.3.1;
+					};
+					A63E442E2A79882000233EB8 = {
+						CreatedOnToolsVersion = 14.3.1;
+						TestTargetID = A63E440F2A7976D200233EB8;
 					};
 				};
 			};
@@ -144,6 +199,7 @@
 			projectRoot = "";
 			targets = (
 				A63E440F2A7976D200233EB8 /* SortingHat */,
+				A63E442E2A79882000233EB8 /* SortingHatTests */,
 			);
 		};
 /* End PBXProject section */
@@ -155,6 +211,13 @@
 			files = (
 				A63E441B2A7976D300233EB8 /* Preview Assets.xcassets in Resources */,
 				A63E44182A7976D300233EB8 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A63E442D2A79882000233EB8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -174,7 +237,24 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		A63E442B2A79882000233EB8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A63E44392A79883700233EB8 /* StudentRandomizerTests.swift in Sources */,
+				A63E44322A79882000233EB8 /* SortingHatTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A63E44342A79882000233EB8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A63E440F2A7976D200233EB8 /* SortingHat */;
+			targetProxy = A63E44332A79882000233EB8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		A63E441C2A7976D300233EB8 /* Debug */ = {
@@ -349,6 +429,42 @@
 			};
 			name = Release;
 		};
+		A63E44362A79882000233EB8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = L8NA8XZ3DK;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = nick.SortingHatTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SortingHat.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/SortingHat";
+			};
+			name = Debug;
+		};
+		A63E44372A79882000233EB8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = L8NA8XZ3DK;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = nick.SortingHatTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SortingHat.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/SortingHat";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -366,6 +482,15 @@
 			buildConfigurations = (
 				A63E441F2A7976D300233EB8 /* Debug */,
 				A63E44202A7976D300233EB8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A63E44352A79882000233EB8 /* Build configuration list for PBXNativeTarget "SortingHatTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A63E44362A79882000233EB8 /* Debug */,
+				A63E44372A79882000233EB8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
