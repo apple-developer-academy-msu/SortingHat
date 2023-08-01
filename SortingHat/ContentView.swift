@@ -14,15 +14,13 @@ import SwiftUI
 
 // How can we apply best practices and the new concepts we have been talking about? (Optionals, Generics, Protocolos, Extensions, etc.)
 struct ContentView: View {
-    
+    @StateObject var randomizer: StudentRandomizer = StudentRandomizer(learners: Learner.testLearners)
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+        Button("Sort") {
+            
+            
+            print("\(randomizer.sortLearners())")
         }
-        .padding()
     }
 }
 

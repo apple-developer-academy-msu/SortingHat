@@ -9,11 +9,14 @@ import Foundation
 
 class StudentRandomizer: ObservableObject {
     @Published var learners: [Learner] = []
-    func sortLearners() -> [Team] {
-        
-        learners.shuffle()
-        let teams =  learners.chunked(into: 5).map { Team(members: $0)}
-        
-        return teams
+    @Published var sortedTeams: [Team]?
+    static let defaultTeamSize = 5
+    
+    init(learners: [Learner]) {
+        self.learners = learners
+    }
+    
+    func sortLearners() {
+        sortedTeams = learners.shuffled().chunked(into: Self.defaultTeamSize).map { Team(members: $0) }
     }
 }
