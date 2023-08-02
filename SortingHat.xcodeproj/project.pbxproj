@@ -21,6 +21,7 @@
 		D6FDF46D2A7A8FBC00E61A36 /* ApiKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6FDF46C2A7A8FBC00E61A36 /* ApiKey.swift */; };
 		D6FDF46F2A7A97F000E61A36 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6FDF46E2A7A97F000E61A36 /* NetworkManager.swift */; };
 		D6FDF4712A7AA84100E61A36 /* LearnerResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6FDF4702A7AA84100E61A36 /* LearnerResponse.swift */; };
+		D6FDF4732A7AABB100E61A36 /* StudentFetchingService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6FDF4722A7AABB100E61A36 /* StudentFetchingService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +51,7 @@
 		D6FDF46C2A7A8FBC00E61A36 /* ApiKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiKey.swift; sourceTree = "<group>"; };
 		D6FDF46E2A7A97F000E61A36 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		D6FDF4702A7AA84100E61A36 /* LearnerResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearnerResponse.swift; sourceTree = "<group>"; };
+		D6FDF4722A7AABB100E61A36 /* StudentFetchingService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentFetchingService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +98,7 @@
 				D6FDF4662A7A8DF800E61A36 /* AirtableService.swift */,
 				D6FDF4702A7AA84100E61A36 /* LearnerResponse.swift */,
 				D6FDF46E2A7A97F000E61A36 /* NetworkManager.swift */,
+				D6FDF4722A7AABB100E61A36 /* StudentFetchingService.swift */,
 				D6FDF46C2A7A8FBC00E61A36 /* ApiKey.swift */,
 				A63E44282A7982BA00233EB8 /* Models */,
 				A63E44232A79828D00233EB8 /* StudentRandomizer.swift */,
@@ -242,6 +245,7 @@
 			files = (
 				D6FDF4712A7AA84100E61A36 /* LearnerResponse.swift in Sources */,
 				D6FDF46F2A7A97F000E61A36 /* NetworkManager.swift in Sources */,
+				D6FDF4732A7AABB100E61A36 /* StudentFetchingService.swift in Sources */,
 				A63E442A2A7982CE00233EB8 /* Team.swift in Sources */,
 				A63E44242A79828D00233EB8 /* StudentRandomizer.swift in Sources */,
 				D6FDF46D2A7A8FBC00E61A36 /* ApiKey.swift in Sources */,

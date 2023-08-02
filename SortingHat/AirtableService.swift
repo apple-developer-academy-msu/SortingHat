@@ -7,7 +7,7 @@
 
 import Foundation
 
-class AirtableService {
+class AirtableService: StudentFetchingService {
     enum Endpoint: String {
         /*
          airtable limits us to 100 records at a time. need to use offset for subsequent requests
@@ -25,7 +25,7 @@ class AirtableService {
     private let baseUrl = "https://api.airtable.com/v0/app8U1gITzFbzqxIH/"
     // https://api.airtable.com/v0/app8U1gITzFbzqxIH/junior_learners?view=All
     
-    func fetchLearners() async throws -> [Learner] {
+    func fetchLearners() async throws -> [Learner]{
         guard let url = URL(string: baseUrl + Endpoint.juniorLearners.rawValue) else { fatalError() }
         var urlRequest:URLRequest = URLRequest(url:url)
         urlRequest.httpMethod = "GET"

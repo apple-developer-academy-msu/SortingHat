@@ -12,21 +12,22 @@ class StudentRandomizer: ObservableObject {
     @Published var sortedTeams: [Team]?
     @Published var error: Error?
     
+    let service: StudentFetchingService
+    
     static let defaultTeamSize = 5
     
-    init(learners: [Learner]) {
+    init(learners: [Learner], service: StudentFetchingService = AirtableService()) {
         self.learners = learners
+        self.service = service
     }
     
     func sortLearners() {
         sortedTeams = learners.shuffled().chunked(into: Self.defaultTeamSize).map { Team(members: $0) }
     }
     
-    func loadLearners() async {
-        let airTableService = AirtableService()
-        
+    func loadLearners() async {        
         do {
-            learners = try await airTableService.fetchLearners()
+            learners = try await service.fetchLearners()
         } catch {
             self.error = error
         }
