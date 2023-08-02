@@ -7,6 +7,7 @@
 
 import Foundation
 
+@MainActor
 class StudentRandomizer: ObservableObject {
     @Published var learners: [Learner] = []
     @Published var sortedTeams: [Team]?
@@ -16,8 +17,8 @@ class StudentRandomizer: ObservableObject {
     
     static let defaultTeamSize = 5
     
-    init(learners: [Learner], service: StudentFetchingService = AirtableService()) {
-        self.learners = learners
+    init(service: StudentFetchingService = AirtableService())  {
+    
         self.service = service
     }
     
@@ -31,5 +32,11 @@ class StudentRandomizer: ObservableObject {
         } catch {
             self.error = error
         }
+    }
+}
+
+struct MockStudentFetchingService: StudentFetchingService {
+    func fetchLearners() async throws -> [Learner] {
+        Learner.testLearners
     }
 }

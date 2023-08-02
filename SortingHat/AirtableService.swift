@@ -31,6 +31,6 @@ class AirtableService: StudentFetchingService {
         urlRequest.httpMethod = "GET"
         urlRequest.addValue("Bearer \(Secrets.apiKey)" , forHTTPHeaderField: "Authorization")
         let response: LearnerResponse = try await NetworkManager.shared.fetch(from: urlRequest)
-        return response.learners
+        return response.records
     }
 }

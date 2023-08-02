@@ -8,7 +8,7 @@
 import Foundation
 
 struct LearnerResponse: Decodable {
-    let learners: [Learner]
+    let records: [Learner]
     let offset: String?
     
     struct RecordFields: Decodable {
