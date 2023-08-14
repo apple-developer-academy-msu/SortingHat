@@ -17,6 +17,11 @@
 		A63E442A2A7982CE00233EB8 /* Team.swift in Sources */ = {isa = PBXBuildFile; fileRef = A63E44292A7982CE00233EB8 /* Team.swift */; };
 		A63E44322A79882000233EB8 /* SortingHatTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A63E44312A79882000233EB8 /* SortingHatTests.swift */; };
 		A63E44392A79883700233EB8 /* StudentRandomizerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A63E44382A79883700233EB8 /* StudentRandomizerTests.swift */; };
+		D6FDF4672A7A8DF800E61A36 /* AirtableService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6FDF4662A7A8DF800E61A36 /* AirtableService.swift */; };
+		D6FDF46D2A7A8FBC00E61A36 /* ApiKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6FDF46C2A7A8FBC00E61A36 /* ApiKey.swift */; };
+		D6FDF46F2A7A97F000E61A36 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6FDF46E2A7A97F000E61A36 /* NetworkManager.swift */; };
+		D6FDF4712A7AA84100E61A36 /* LearnerResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6FDF4702A7AA84100E61A36 /* LearnerResponse.swift */; };
+		D6FDF4732A7AABB100E61A36 /* StudentFetchingService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6FDF4722A7AABB100E61A36 /* StudentFetchingService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +47,11 @@
 		A63E442F2A79882000233EB8 /* SortingHatTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SortingHatTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A63E44312A79882000233EB8 /* SortingHatTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SortingHatTests.swift; sourceTree = "<group>"; };
 		A63E44382A79883700233EB8 /* StudentRandomizerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentRandomizerTests.swift; sourceTree = "<group>"; };
+		D6FDF4662A7A8DF800E61A36 /* AirtableService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirtableService.swift; sourceTree = "<group>"; };
+		D6FDF46C2A7A8FBC00E61A36 /* ApiKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiKey.swift; sourceTree = "<group>"; };
+		D6FDF46E2A7A97F000E61A36 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		D6FDF4702A7AA84100E61A36 /* LearnerResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearnerResponse.swift; sourceTree = "<group>"; };
+		D6FDF4722A7AABB100E61A36 /* StudentFetchingService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentFetchingService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +95,11 @@
 			children = (
 				A63E44132A7976D200233EB8 /* SortingHatApp.swift */,
 				A63E44152A7976D200233EB8 /* ContentView.swift */,
+				D6FDF4662A7A8DF800E61A36 /* AirtableService.swift */,
+				D6FDF4702A7AA84100E61A36 /* LearnerResponse.swift */,
+				D6FDF46E2A7A97F000E61A36 /* NetworkManager.swift */,
+				D6FDF4722A7AABB100E61A36 /* StudentFetchingService.swift */,
+				D6FDF46C2A7A8FBC00E61A36 /* ApiKey.swift */,
 				A63E44282A7982BA00233EB8 /* Models */,
 				A63E44232A79828D00233EB8 /* StudentRandomizer.swift */,
 				A63E44272A7982B000233EB8 /* Extensions */,
@@ -228,10 +243,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D6FDF4712A7AA84100E61A36 /* LearnerResponse.swift in Sources */,
+				D6FDF46F2A7A97F000E61A36 /* NetworkManager.swift in Sources */,
+				D6FDF4732A7AABB100E61A36 /* StudentFetchingService.swift in Sources */,
 				A63E442A2A7982CE00233EB8 /* Team.swift in Sources */,
 				A63E44242A79828D00233EB8 /* StudentRandomizer.swift in Sources */,
+				D6FDF46D2A7A8FBC00E61A36 /* ApiKey.swift in Sources */,
 				A63E44262A7982AB00233EB8 /* Array+Extension.swift in Sources */,
 				A63E44222A797B8B00233EB8 /* Learner.swift in Sources */,
+				D6FDF4672A7A8DF800E61A36 /* AirtableService.swift in Sources */,
 				A63E44162A7976D200233EB8 /* ContentView.swift in Sources */,
 				A63E44142A7976D200233EB8 /* SortingHatApp.swift in Sources */,
 			);
@@ -379,7 +399,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"SortingHat/Preview Content\"";
-				DEVELOPMENT_TEAM = L8NA8XZ3DK;
+				DEVELOPMENT_TEAM = 5Q9K7U8YKX;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -387,6 +407,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -408,7 +429,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"SortingHat/Preview Content\"";
-				DEVELOPMENT_TEAM = L8NA8XZ3DK;
+				DEVELOPMENT_TEAM = 5Q9K7U8YKX;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -416,6 +437,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
