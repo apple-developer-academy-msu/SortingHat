@@ -8,5 +8,6 @@
 import Foundation
 
 protocol StudentFetchingService {
+    var offset: String? {get}
     func fetchLearners() async throws -> [Learner]
 }

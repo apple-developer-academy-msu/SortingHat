@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 70;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -15,7 +15,6 @@
 		8E07AA5D2E4D27CF00698147 /* StudentFetchingService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6FDF4722A7AABB100E61A36 /* StudentFetchingService.swift */; };
 		8E07AA5E2E4D27D400698147 /* Learner.swift in Sources */ = {isa = PBXBuildFile; fileRef = A63E44212A797B8B00233EB8 /* Learner.swift */; };
 		8E07AA5F2E4D27D900698147 /* Team.swift in Sources */ = {isa = PBXBuildFile; fileRef = A63E44292A7982CE00233EB8 /* Team.swift */; };
-		8E07AA602E4D27DE00698147 /* StudentRandomizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A63E44232A79828D00233EB8 /* StudentRandomizer.swift */; };
 		8E07AA612E4D27E400698147 /* Array+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A63E44252A7982AB00233EB8 /* Array+Extension.swift */; };
 		8E07AA622E4D27EB00698147 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A63E44172A7976D300233EB8 /* Assets.xcassets */; };
 		8E07AA632E4D282A00698147 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A63E441A2A7976D300233EB8 /* Preview Assets.xcassets */; };
@@ -24,7 +23,6 @@
 		A63E44182A7976D300233EB8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A63E44172A7976D300233EB8 /* Assets.xcassets */; };
 		A63E441B2A7976D300233EB8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A63E441A2A7976D300233EB8 /* Preview Assets.xcassets */; };
 		A63E44222A797B8B00233EB8 /* Learner.swift in Sources */ = {isa = PBXBuildFile; fileRef = A63E44212A797B8B00233EB8 /* Learner.swift */; };
-		A63E44242A79828D00233EB8 /* StudentRandomizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A63E44232A79828D00233EB8 /* StudentRandomizer.swift */; };
 		A63E44262A7982AB00233EB8 /* Array+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A63E44252A7982AB00233EB8 /* Array+Extension.swift */; };
 		A63E442A2A7982CE00233EB8 /* Team.swift in Sources */ = {isa = PBXBuildFile; fileRef = A63E44292A7982CE00233EB8 /* Team.swift */; };
 		A63E44322A79882000233EB8 /* SortingHatTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A63E44312A79882000233EB8 /* SortingHatTests.swift */; };
@@ -70,7 +68,6 @@
 		A63E44172A7976D300233EB8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A63E441A2A7976D300233EB8 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		A63E44212A797B8B00233EB8 /* Learner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Learner.swift; sourceTree = "<group>"; };
-		A63E44232A79828D00233EB8 /* StudentRandomizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentRandomizer.swift; sourceTree = "<group>"; };
 		A63E44252A7982AB00233EB8 /* Array+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+Extension.swift"; sourceTree = "<group>"; };
 		A63E44292A7982CE00233EB8 /* Team.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Team.swift; sourceTree = "<group>"; };
 		A63E442F2A79882000233EB8 /* SortingHatTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SortingHatTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -81,6 +78,10 @@
 		D6FDF4702A7AA84100E61A36 /* LearnerResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearnerResponse.swift; sourceTree = "<group>"; };
 		D6FDF4722A7AABB100E61A36 /* StudentFetchingService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentFetchingService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		8E54298D2E4D74A700C20D02 /* Manager */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = Manager; sourceTree = "<group>"; };
+/* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		8E07AA2D2E4D279700698147 /* Frameworks */ = {
@@ -152,7 +153,7 @@
 				D6FDF46E2A7A97F000E61A36 /* NetworkManager.swift */,
 				D6FDF4722A7AABB100E61A36 /* StudentFetchingService.swift */,
 				A63E44282A7982BA00233EB8 /* Models */,
-				A63E44232A79828D00233EB8 /* StudentRandomizer.swift */,
+				8E54298D2E4D74A700C20D02 /* Manager */,
 				A63E44272A7982B000233EB8 /* Extensions */,
 				A63E44172A7976D300233EB8 /* Assets.xcassets */,
 				A63E44192A7976D300233EB8 /* Preview Content */,
@@ -209,6 +210,9 @@
 			buildRules = (
 			);
 			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				8E54298D2E4D74A700C20D02 /* Manager */,
 			);
 			name = SortingHatMac;
 			packageProductDependencies = (
@@ -268,6 +272,9 @@
 			buildRules = (
 			);
 			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				8E54298D2E4D74A700C20D02 /* Manager */,
 			);
 			name = SortingHat;
 			productName = SortingHat;
@@ -399,7 +406,6 @@
 				8E07AA5F2E4D27D900698147 /* Team.swift in Sources */,
 				8E07AA5D2E4D27CF00698147 /* StudentFetchingService.swift in Sources */,
 				8E07AA5A2E4D27C000698147 /* AirtableService.swift in Sources */,
-				8E07AA602E4D27DE00698147 /* StudentRandomizer.swift in Sources */,
 				8E07AA582E4D27B500698147 /* SortingHatApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -426,7 +432,6 @@
 				D6FDF46F2A7A97F000E61A36 /* NetworkManager.swift in Sources */,
 				D6FDF4732A7AABB100E61A36 /* StudentFetchingService.swift in Sources */,
 				A63E442A2A7982CE00233EB8 /* Team.swift in Sources */,
-				A63E44242A79828D00233EB8 /* StudentRandomizer.swift in Sources */,
 				A63E44262A7982AB00233EB8 /* Array+Extension.swift in Sources */,
 				A63E44222A797B8B00233EB8 /* Learner.swift in Sources */,
 				D6FDF4672A7A8DF800E61A36 /* AirtableService.swift in Sources */,

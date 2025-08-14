@@ -9,13 +9,15 @@ import Foundation
 
 struct Learner: Identifiable, Hashable {
     let id: String
-    var first: String
-    var last: String
+    var firstName: String
+    var lastName: String
+    var cohort: Cohort
     
-    init(first: String, last: String) {
+    init(first: String, last: String, cohort: Cohort) {
         self.id = UUID().uuidString
-        self.first = first
-        self.last = last
+        self.firstName = first
+        self.lastName = last
+        self.cohort = cohort
     }
 }
 
@@ -24,24 +26,31 @@ extension Learner: Decodable {
         let container: KeyedDecodingContainer<CodingKeys> = try decoder.container(keyedBy: CodingKeys.self)
         self.id = try container.decode(String.self, forKey: .id)
         let fields = try container.decode(LearnerResponse.RecordFields.self, forKey: .fields)
-        self.first = fields.firstName
-        self.last = fields.lastName
+        self.firstName = fields.firstName
+        self.lastName = fields.lastName
+        
+        if fields.cohort.contains("Morning") {
+            self.cohort = .AM
+        } else {
+            self.cohort = .PM
+        }
+       
+       
     }
     
     enum CodingKeys: String, CodingKey {
         case id
         case fields
     }
-    
 }
 
 #if DEBUG
 extension Learner {
-    static var testLearner = Learner(first: "Tyriq", last: "Lawilliams")
+    static var testLearner = Learner(first: "Tyriq", last: "Lawilliams", cohort: .AM)
     static var testLearners: [Learner]{
         var tempLearners = [Learner]()
         for i in 1...200 {
-            tempLearners.append(Learner(first: "Tyriq\(i)", last: "LaWilliams"))
+            tempLearners.append(Learner(first: "Tyriq\(i)", last: "LaWilliams", cohort: .AM))
         }
         return tempLearners
     }

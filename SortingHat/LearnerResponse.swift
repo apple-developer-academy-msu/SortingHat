@@ -14,10 +14,12 @@ struct LearnerResponse: Decodable {
     struct RecordFields: Decodable {
         let firstName: String
         let lastName: String
+        let cohort: String
         
         enum CodingKeys: String, CodingKey {
             case firstName = "First Name"
             case lastName = "Last Name"
+            case cohort = "Cohort Preference"
         }
     }
 }

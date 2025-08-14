@@ -1,6 +1,6 @@
 import SwiftUI
 
-enum Cohort: String, CaseIterable {
+enum Cohort: String, CaseIterable, Codable {
     case AM
     case PM
 }
@@ -9,6 +9,11 @@ enum SortingMethod: Int, CaseIterable {
     case three = 3
     case four = 4
     case five = 5
+    case six = 6
+    case seven = 7
+    case eight = 8
+    case nine = 9
+    case ten = 10
 }
 
 
@@ -28,6 +33,7 @@ struct SortingView: View {
                     Color.white,
                     Color.blue.opacity(0.15)
                 ],
+
                 startPoint: .topLeading,
                 endPoint: .bottomTrailing
             )
@@ -50,7 +56,7 @@ struct SortingView: View {
                             Text("\(method.rawValue)")
                         }
                     }
-                    .pickerStyle(.segmented)
+                    .pickerStyle(.menu)
                 }
                 .frame(width: 400)
             
@@ -58,13 +64,7 @@ struct SortingView: View {
                     
                     Button(action: {
                         Task {
-                            await teamSortManager.loadLearners()
-                             teamSortManager.sortLearners(intoTeamsOf: currentSelection.rawValue)
-                        }
-                        Task {
-                            await teamSortManager.loadLearners()
-                            
-                        
+                            await teamSortManager.sortLearners(intoTeamsOf: currentSelection.rawValue, and: currentCohort)
                         }
                     }) {
                         Label("Sort", systemImage: "arrow.2.squarepath")
@@ -103,7 +103,8 @@ struct SortingView: View {
                                         .background(Color.white.opacity(0.4))
                                     
                                     ForEach(team.learners) { learner in
-                                        Text("\(learner.first) \(learner.last)")
+                                        Text("\(learner.firstName) \(learner.lastName) with \(learner.cohort.rawValue)")
+                                    
                                         
                                     }
                                    
@@ -140,7 +141,7 @@ struct SortingView: View {
             .map { index, team in
                 """
                 Team \(index + 1):
-                \(team.learners.map { "\($0.first) \($0.last)" }.joined(separator: "\n"))
+                \(team.learners.map { "\($0.firstName) \($0.lastName)" }.joined(separator: "\n"))
                 """
             }
             .joined(separator: "\n\n")
