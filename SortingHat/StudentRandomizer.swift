@@ -6,12 +6,13 @@
 //
 
 import Foundation
+import Observation
 
 @MainActor
-class StudentRandomizer: ObservableObject {
-    @Published var learners: [Learner] = []
-    @Published var sortedTeams: [Team]?
-    @Published var error: Error?
+@Observable class StudentRandomizer {
+    var learners: [Learner] = []
+    var sortedTeams: [Team] = []
+    var error: Error?
     
     let service: StudentFetchingService
     
@@ -22,13 +23,14 @@ class StudentRandomizer: ObservableObject {
         self.service = service
     }
     
-    func sortLearners() {
-        sortedTeams = learners.shuffled().chunked(into: Self.defaultTeamSize).map { Team(members: $0) }
+    func sortLearners(intoTeamsOf teamSize: Int) {
+        sortedTeams = learners.shuffled().chunked(into: teamSize ).map { Team(learners: $0) }
     }
     
     func loadLearners() async {        
         do {
             learners = try await service.fetchLearners()
+     
         } catch {
             self.error = error
         }

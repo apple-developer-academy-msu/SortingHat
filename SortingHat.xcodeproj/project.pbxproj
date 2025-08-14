@@ -7,6 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8E07AA582E4D27B500698147 /* SortingHatApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A63E44132A7976D200233EB8 /* SortingHatApp.swift */; };
+		8E07AA592E4D27BB00698147 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A63E44152A7976D200233EB8 /* ContentView.swift */; };
+		8E07AA5A2E4D27C000698147 /* AirtableService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6FDF4662A7A8DF800E61A36 /* AirtableService.swift */; };
+		8E07AA5B2E4D27C500698147 /* LearnerResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6FDF4702A7AA84100E61A36 /* LearnerResponse.swift */; };
+		8E07AA5C2E4D27CA00698147 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6FDF46E2A7A97F000E61A36 /* NetworkManager.swift */; };
+		8E07AA5D2E4D27CF00698147 /* StudentFetchingService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6FDF4722A7AABB100E61A36 /* StudentFetchingService.swift */; };
+		8E07AA5E2E4D27D400698147 /* Learner.swift in Sources */ = {isa = PBXBuildFile; fileRef = A63E44212A797B8B00233EB8 /* Learner.swift */; };
+		8E07AA5F2E4D27D900698147 /* Team.swift in Sources */ = {isa = PBXBuildFile; fileRef = A63E44292A7982CE00233EB8 /* Team.swift */; };
+		8E07AA602E4D27DE00698147 /* StudentRandomizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A63E44232A79828D00233EB8 /* StudentRandomizer.swift */; };
+		8E07AA612E4D27E400698147 /* Array+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A63E44252A7982AB00233EB8 /* Array+Extension.swift */; };
+		8E07AA622E4D27EB00698147 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A63E44172A7976D300233EB8 /* Assets.xcassets */; };
+		8E07AA632E4D282A00698147 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A63E441A2A7976D300233EB8 /* Preview Assets.xcassets */; };
 		A63E44142A7976D200233EB8 /* SortingHatApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A63E44132A7976D200233EB8 /* SortingHatApp.swift */; };
 		A63E44162A7976D200233EB8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A63E44152A7976D200233EB8 /* ContentView.swift */; };
 		A63E44182A7976D300233EB8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A63E44172A7976D300233EB8 /* Assets.xcassets */; };
@@ -18,13 +30,26 @@
 		A63E44322A79882000233EB8 /* SortingHatTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A63E44312A79882000233EB8 /* SortingHatTests.swift */; };
 		A63E44392A79883700233EB8 /* StudentRandomizerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A63E44382A79883700233EB8 /* StudentRandomizerTests.swift */; };
 		D6FDF4672A7A8DF800E61A36 /* AirtableService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6FDF4662A7A8DF800E61A36 /* AirtableService.swift */; };
-		D6FDF46D2A7A8FBC00E61A36 /* ApiKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6FDF46C2A7A8FBC00E61A36 /* ApiKey.swift */; };
 		D6FDF46F2A7A97F000E61A36 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6FDF46E2A7A97F000E61A36 /* NetworkManager.swift */; };
 		D6FDF4712A7AA84100E61A36 /* LearnerResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6FDF4702A7AA84100E61A36 /* LearnerResponse.swift */; };
 		D6FDF4732A7AABB100E61A36 /* StudentFetchingService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6FDF4722A7AABB100E61A36 /* StudentFetchingService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		8E07AA3E2E4D279800698147 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A63E44082A7976D200233EB8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8E07AA2F2E4D279700698147;
+			remoteInfo = SortingHatMac;
+		};
+		8E07AA482E4D279800698147 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A63E44082A7976D200233EB8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8E07AA2F2E4D279700698147;
+			remoteInfo = SortingHatMac;
+		};
 		A63E44332A79882000233EB8 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = A63E44082A7976D200233EB8 /* Project object */;
@@ -35,6 +60,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8E07AA302E4D279700698147 /* SortingHatMac.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SortingHatMac.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8E07AA3D2E4D279800698147 /* SortingHatMacTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SortingHatMacTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8E07AA472E4D279800698147 /* SortingHatMacUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SortingHatMacUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8E07AA7F2E4D2A1B00698147 /* SortingHat.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SortingHat.entitlements; sourceTree = "<group>"; };
 		A63E44102A7976D200233EB8 /* SortingHat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SortingHat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A63E44132A7976D200233EB8 /* SortingHatApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SortingHatApp.swift; sourceTree = "<group>"; };
 		A63E44152A7976D200233EB8 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -48,13 +77,33 @@
 		A63E44312A79882000233EB8 /* SortingHatTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SortingHatTests.swift; sourceTree = "<group>"; };
 		A63E44382A79883700233EB8 /* StudentRandomizerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentRandomizerTests.swift; sourceTree = "<group>"; };
 		D6FDF4662A7A8DF800E61A36 /* AirtableService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirtableService.swift; sourceTree = "<group>"; };
-		D6FDF46C2A7A8FBC00E61A36 /* ApiKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiKey.swift; sourceTree = "<group>"; };
 		D6FDF46E2A7A97F000E61A36 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		D6FDF4702A7AA84100E61A36 /* LearnerResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearnerResponse.swift; sourceTree = "<group>"; };
 		D6FDF4722A7AABB100E61A36 /* StudentFetchingService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentFetchingService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		8E07AA2D2E4D279700698147 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8E07AA3A2E4D279800698147 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8E07AA442E4D279800698147 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		A63E440D2A7976D200233EB8 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -86,6 +135,9 @@
 			children = (
 				A63E44102A7976D200233EB8 /* SortingHat.app */,
 				A63E442F2A79882000233EB8 /* SortingHatTests.xctest */,
+				8E07AA302E4D279700698147 /* SortingHatMac.app */,
+				8E07AA3D2E4D279800698147 /* SortingHatMacTests.xctest */,
+				8E07AA472E4D279800698147 /* SortingHatMacUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -99,12 +151,12 @@
 				D6FDF4702A7AA84100E61A36 /* LearnerResponse.swift */,
 				D6FDF46E2A7A97F000E61A36 /* NetworkManager.swift */,
 				D6FDF4722A7AABB100E61A36 /* StudentFetchingService.swift */,
-				D6FDF46C2A7A8FBC00E61A36 /* ApiKey.swift */,
 				A63E44282A7982BA00233EB8 /* Models */,
 				A63E44232A79828D00233EB8 /* StudentRandomizer.swift */,
 				A63E44272A7982B000233EB8 /* Extensions */,
 				A63E44172A7976D300233EB8 /* Assets.xcassets */,
 				A63E44192A7976D300233EB8 /* Preview Content */,
+				8E07AA7F2E4D2A1B00698147 /* SortingHat.entitlements */,
 			);
 			path = SortingHat;
 			sourceTree = "<group>";
@@ -146,6 +198,65 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		8E07AA2F2E4D279700698147 /* SortingHatMac */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8E07AA552E4D279800698147 /* Build configuration list for PBXNativeTarget "SortingHatMac" */;
+			buildPhases = (
+				8E07AA2C2E4D279700698147 /* Sources */,
+				8E07AA2D2E4D279700698147 /* Frameworks */,
+				8E07AA2E2E4D279700698147 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SortingHatMac;
+			packageProductDependencies = (
+			);
+			productName = SortingHatMac;
+			productReference = 8E07AA302E4D279700698147 /* SortingHatMac.app */;
+			productType = "com.apple.product-type.application";
+		};
+		8E07AA3C2E4D279800698147 /* SortingHatMacTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8E07AA562E4D279800698147 /* Build configuration list for PBXNativeTarget "SortingHatMacTests" */;
+			buildPhases = (
+				8E07AA392E4D279800698147 /* Sources */,
+				8E07AA3A2E4D279800698147 /* Frameworks */,
+				8E07AA3B2E4D279800698147 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8E07AA3F2E4D279800698147 /* PBXTargetDependency */,
+			);
+			name = SortingHatMacTests;
+			packageProductDependencies = (
+			);
+			productName = SortingHatMacTests;
+			productReference = 8E07AA3D2E4D279800698147 /* SortingHatMacTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		8E07AA462E4D279800698147 /* SortingHatMacUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8E07AA572E4D279800698147 /* Build configuration list for PBXNativeTarget "SortingHatMacUITests" */;
+			buildPhases = (
+				8E07AA432E4D279800698147 /* Sources */,
+				8E07AA442E4D279800698147 /* Frameworks */,
+				8E07AA452E4D279800698147 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8E07AA492E4D279800698147 /* PBXTargetDependency */,
+			);
+			name = SortingHatMacUITests;
+			packageProductDependencies = (
+			);
+			productName = SortingHatMacUITests;
+			productReference = 8E07AA472E4D279800698147 /* SortingHatMacUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 		A63E440F2A7976D200233EB8 /* SortingHat */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = A63E441E2A7976D300233EB8 /* Build configuration list for PBXNativeTarget "SortingHat" */;
@@ -188,9 +299,20 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastSwiftUpdateCheck = 1430;
+				LastSwiftUpdateCheck = 1640;
 				LastUpgradeCheck = 1430;
 				TargetAttributes = {
+					8E07AA2F2E4D279700698147 = {
+						CreatedOnToolsVersion = 16.4;
+					};
+					8E07AA3C2E4D279800698147 = {
+						CreatedOnToolsVersion = 16.4;
+						TestTargetID = 8E07AA2F2E4D279700698147;
+					};
+					8E07AA462E4D279800698147 = {
+						CreatedOnToolsVersion = 16.4;
+						TestTargetID = 8E07AA2F2E4D279700698147;
+					};
 					A63E440F2A7976D200233EB8 = {
 						CreatedOnToolsVersion = 14.3.1;
 					};
@@ -215,11 +337,37 @@
 			targets = (
 				A63E440F2A7976D200233EB8 /* SortingHat */,
 				A63E442E2A79882000233EB8 /* SortingHatTests */,
+				8E07AA2F2E4D279700698147 /* SortingHatMac */,
+				8E07AA3C2E4D279800698147 /* SortingHatMacTests */,
+				8E07AA462E4D279800698147 /* SortingHatMacUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		8E07AA2E2E4D279700698147 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8E07AA632E4D282A00698147 /* Preview Assets.xcassets in Resources */,
+				8E07AA622E4D27EB00698147 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8E07AA3B2E4D279800698147 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8E07AA452E4D279800698147 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		A63E440E2A7976D200233EB8 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -239,6 +387,37 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		8E07AA2C2E4D279700698147 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8E07AA5E2E4D27D400698147 /* Learner.swift in Sources */,
+				8E07AA612E4D27E400698147 /* Array+Extension.swift in Sources */,
+				8E07AA5B2E4D27C500698147 /* LearnerResponse.swift in Sources */,
+				8E07AA592E4D27BB00698147 /* ContentView.swift in Sources */,
+				8E07AA5C2E4D27CA00698147 /* NetworkManager.swift in Sources */,
+				8E07AA5F2E4D27D900698147 /* Team.swift in Sources */,
+				8E07AA5D2E4D27CF00698147 /* StudentFetchingService.swift in Sources */,
+				8E07AA5A2E4D27C000698147 /* AirtableService.swift in Sources */,
+				8E07AA602E4D27DE00698147 /* StudentRandomizer.swift in Sources */,
+				8E07AA582E4D27B500698147 /* SortingHatApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8E07AA392E4D279800698147 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8E07AA432E4D279800698147 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		A63E440C2A7976D200233EB8 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -248,7 +427,6 @@
 				D6FDF4732A7AABB100E61A36 /* StudentFetchingService.swift in Sources */,
 				A63E442A2A7982CE00233EB8 /* Team.swift in Sources */,
 				A63E44242A79828D00233EB8 /* StudentRandomizer.swift in Sources */,
-				D6FDF46D2A7A8FBC00E61A36 /* ApiKey.swift in Sources */,
 				A63E44262A7982AB00233EB8 /* Array+Extension.swift in Sources */,
 				A63E44222A797B8B00233EB8 /* Learner.swift in Sources */,
 				D6FDF4672A7A8DF800E61A36 /* AirtableService.swift in Sources */,
@@ -269,6 +447,16 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		8E07AA3F2E4D279800698147 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8E07AA2F2E4D279700698147 /* SortingHatMac */;
+			targetProxy = 8E07AA3E2E4D279800698147 /* PBXContainerItemProxy */;
+		};
+		8E07AA492E4D279800698147 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8E07AA2F2E4D279700698147 /* SortingHatMac */;
+			targetProxy = 8E07AA482E4D279800698147 /* PBXContainerItemProxy */;
+		};
 		A63E44342A79882000233EB8 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = A63E440F2A7976D200233EB8 /* SortingHat */;
@@ -277,6 +465,167 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		8E07AA4F2E4D279800698147 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = SortingHat/SortingHat.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6FP5LT63NT;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 0.1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.SortingHatMac;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				REGISTER_APP_GROUPS = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		8E07AA502E4D279800698147 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = SortingHat/SortingHat.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6FP5LT63NT;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 0.1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.SortingHatMac;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				REGISTER_APP_GROUPS = YES;
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		8E07AA512E4D279800698147 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6FP5LT63NT;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GENERATE_INFOPLIST_FILE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.SortingHatMacTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SortingHatMac.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/SortingHatMac";
+			};
+			name = Debug;
+		};
+		8E07AA522E4D279800698147 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6FP5LT63NT;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GENERATE_INFOPLIST_FILE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.SortingHatMacTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SortingHatMac.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/SortingHatMac";
+			};
+			name = Release;
+		};
+		8E07AA532E4D279800698147 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6FP5LT63NT;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GENERATE_INFOPLIST_FILE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.SortingHatMacUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = SortingHatMac;
+			};
+			name = Debug;
+		};
+		8E07AA542E4D279800698147 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6FP5LT63NT;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GENERATE_INFOPLIST_FILE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.SortingHatMacUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = SortingHatMac;
+			};
+			name = Release;
+		};
 		A63E441C2A7976D300233EB8 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -399,7 +748,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"SortingHat/Preview Content\"";
-				DEVELOPMENT_TEAM = 5Q9K7U8YKX;
+				DEVELOPMENT_TEAM = 6FP5LT63NT;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -407,7 +756,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -429,7 +778,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"SortingHat/Preview Content\"";
-				DEVELOPMENT_TEAM = 5Q9K7U8YKX;
+				DEVELOPMENT_TEAM = 6FP5LT63NT;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -437,7 +786,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -490,6 +839,33 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		8E07AA552E4D279800698147 /* Build configuration list for PBXNativeTarget "SortingHatMac" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8E07AA4F2E4D279800698147 /* Debug */,
+				8E07AA502E4D279800698147 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8E07AA562E4D279800698147 /* Build configuration list for PBXNativeTarget "SortingHatMacTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8E07AA512E4D279800698147 /* Debug */,
+				8E07AA522E4D279800698147 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8E07AA572E4D279800698147 /* Build configuration list for PBXNativeTarget "SortingHatMacUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8E07AA532E4D279800698147 /* Debug */,
+				8E07AA542E4D279800698147 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		A63E440B2A7976D200233EB8 /* Build configuration list for PBXProject "SortingHat" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

@@ -11,7 +11,7 @@ import SwiftUI
 struct SortingHatApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            SortingView()
         }
     }
 }

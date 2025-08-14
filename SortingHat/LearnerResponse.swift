@@ -16,8 +16,8 @@ struct LearnerResponse: Decodable {
         let lastName: String
         
         enum CodingKeys: String, CodingKey {
-            case firstName = "FirstName"
-            case lastName = "LastName"
+            case firstName = "First Name"
+            case lastName = "Last Name"
         }
     }
 }

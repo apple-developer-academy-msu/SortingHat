@@ -7,6 +7,7 @@
 
 import Foundation
 
-struct Team {
-    var members: [Learner]
+struct Team: Identifiable {
+    var id = UUID()
+    var learners: [Learner]
 }

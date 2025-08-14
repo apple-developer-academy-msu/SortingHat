@@ -22,14 +22,14 @@ class AirtableService: StudentFetchingService {
     
     
     
-    private let baseUrl = "https://api.airtable.com/v0/app8U1gITzFbzqxIH/"
+    private let baseUrl = "https://api.airtable.com/v0/appwJwPc7tsDFU3lw/JuniorLearners?tbleYuru2pkCNoLe6"
     // https://api.airtable.com/v0/app8U1gITzFbzqxIH/junior_learners?view=All
     
     func fetchLearners() async throws -> [Learner]{
-        guard let url = URL(string: baseUrl + Endpoint.juniorLearners.rawValue) else { fatalError() }
+        guard let url = URL(string: baseUrl) else { fatalError() }
         var urlRequest:URLRequest = URLRequest(url:url)
         urlRequest.httpMethod = "GET"
-        urlRequest.addValue("Bearer \(Secrets.apiKey)" , forHTTPHeaderField: "Authorization")
+        urlRequest.addValue("Bearer patXxFUTCWbkIMRjn.9e8de123b093576de093323c015950fb44fa93e907cfb865469fb9cf265851fa" , forHTTPHeaderField: "Authorization")
         let response: LearnerResponse = try await NetworkManager.shared.fetch(from: urlRequest)
         return response.records
     }
