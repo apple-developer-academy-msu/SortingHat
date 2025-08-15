@@ -8,11 +8,17 @@
 import Foundation
 import Observation
 
+enum LoadingState {
+    case loading
+    case notLoading
+}
+
 @MainActor
 @Observable class StudentRandomizer {
     var learners: [Learner] = []
     var sortedTeams: [Team] = []
     var error: Error?
+    var loadingState: LoadingState = .notLoading
     
     let service: StudentFetchingService
     init(service: StudentFetchingService = AirtableService())  {
@@ -21,8 +27,10 @@ import Observation
     }
     
     func sortLearners(intoTeamsOf teamSize: Int, and cohort: Cohort) async {
+        loadingState = .loading
         await filterLearnersByCohort(cohort)
         sortedTeams = learners.shuffled().chunked(into: teamSize ).map { Team(learners: $0) }
+        loadingState = .notLoading
     }
     
     func loadLearners() async -> [Learner] {
@@ -34,7 +42,7 @@ import Observation
             
             while service.offset != nil {
            learners += try await service.fetchLearners()
-             
+                print("\(learners.count)")
             }
         
         } catch {
@@ -51,10 +59,10 @@ import Observation
     }
 }
 
-struct MockStudentFetchingService: StudentFetchingService {
-    var offset: String?
-    
-    func fetchLearners() async throws -> [Learner] {
-        Learner.testLearners
-    }
-}
+//struct MockStudentFetchingService: StudentFetchingService {
+//    var offset: String?
+//    
+//    func fetchLearners() async throws -> [Learner] {
+//        Learner.testLearners
+//    }
+//}

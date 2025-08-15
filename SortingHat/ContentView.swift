@@ -40,7 +40,7 @@ struct SortingView: View {
             .ignoresSafeArea()
             
             VStack(spacing: 20) {
-                
+               
                 VStack{
                     Picker("Cohort", selection: $currentCohort) {
                         ForEach(Cohort.allCases, id: \.self) { method in
@@ -86,46 +86,57 @@ struct SortingView: View {
              
                 
                
-                GeometryReader { geo in
-                    let availableWidth = geo.size.width - 200
-                    let columns = max(Int(availableWidth / minColumnWidth), 1)
-                    let layout = Array(repeating: GridItem(.flexible(), spacing: 20), count: columns)
                     
-                    ScrollView {
-                        LazyVGrid(columns: layout, spacing: 20) {
-                            ForEach(teamSortManager.sortedTeams ) { team in
-                                VStack(spacing: 12) {
-                                    Text("Team")
-                                        .font(.headline)
-                                        .foregroundStyle(.white)
-                                    
-                                    Divider()
-                                        .background(Color.white.opacity(0.4))
-                                    
-                                    ForEach(team.learners) { learner in
-                                        Text("\(learner.firstName) \(learner.lastName) with \(learner.cohort.rawValue)")
-                                    
+                    GeometryReader { geo in
+                        let availableWidth = geo.size.width - 200
+                        let columns = max(Int(availableWidth / minColumnWidth), 1)
+                        let layout = Array(repeating: GridItem(.flexible(), spacing: 20), count: columns)
+                        
+                        if teamSortManager.loadingState == .loading {
+                            HStack {
+                                Spacer()
+                                ProgressView()
+                                Spacer()
+                            }
+                                
+                        } else {
+                            
+                        ScrollView {
+                            LazyVGrid(columns: layout, spacing: 20) {
+                                ForEach(teamSortManager.sortedTeams ) { team in
+                                    VStack(spacing: 12) {
+                                        Text("Group")
+                                            .font(.headline)
+                                            .foregroundStyle(.white)
+                                        
+                                        Divider()
+                                            .background(Color.white.opacity(0.4))
+                                        
+                                        ForEach(team.learners) { learner in
+                                            Text("\(learner.firstName) \(learner.lastName)")
+                                            
+                                            
+                                        }
                                         
                                     }
-                                   
-                                }
-                                .frame(minWidth: 200, maxWidth: 200, minHeight: 200, maxHeight: 400)
-                                .padding()
-                                .background(
-                                    LinearGradient(
-                                        colors: [.green.opacity(0.8), .blue.opacity(0.6)],
-                                        startPoint: .topLeading,
-                                        endPoint: .bottomTrailing
+                                    .frame(minWidth: 200, maxWidth: 200, minHeight: 200, maxHeight: 400)
+                                    .padding()
+                                    .background(
+                                        LinearGradient(
+                                            colors: [.green.opacity(0.8), .blue.opacity(0.6)],
+                                            startPoint: .topLeading,
+                                            endPoint: .bottomTrailing
+                                        )
+                                        .cornerRadius(20)
                                     )
-                                    .cornerRadius(20)
-                                )
-                                .shadow(color: .black.opacity(0.2), radius: 10, x: 0, y: 5)
-                                .shadow(color: .green.opacity(0.3), radius: 20, x: 0, y: 10)
-                                .scaleEffect(1.0)
-                               // .animation(.spring(response: 0.3), value: team.id)
+                                    .shadow(color: .black.opacity(0.2), radius: 10, x: 0, y: 5)
+                                    .shadow(color: .green.opacity(0.3), radius: 20, x: 0, y: 10)
+                                    .scaleEffect(1.0)
+                                    // .animation(.spring(response: 0.3), value: team.id)
+                                }
                             }
+                            .padding(.horizontal, 100)
                         }
-                        .padding(.horizontal, 100)
                     }
                 }
             }

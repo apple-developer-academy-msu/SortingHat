@@ -32,6 +32,7 @@ class AirtableService: StudentFetchingService {
     // https://api.airtable.com/v0/app8U1gITzFbzqxIH/junior_learners?view=All
     
     func fetchLearners() async throws -> [Learner] {
+        
         var baseUrl = "https://api.airtable.com/v0/appwJwPc7tsDFU3lw/JuniorLearners?tbleYuru2pkCNoLe6?pageSize=\(pageSize)&maxRecords=\(maxRecords)"
         if let offset = offset {
                      baseUrl += "&offset=\(offset)"
@@ -47,8 +48,7 @@ class AirtableService: StudentFetchingService {
         self.offset = response.offset
         if response.offset == nil {
             offset = nil
-            baseUrl = "https://api.airtable.com/v0/appwJwPc7tsDFU3lw/JuniorLearners?tbleYuru2pkCNoLe6"
-            
+            baseUrl = "https://api.airtable.com/v0/appwJwPc7tsDFU3lw/JuniorLearners?tbleYuru2pkCNoLe6?pageSize=\(pageSize)&maxRecords=\(maxRecords)"
         }
         return response.records
     }
